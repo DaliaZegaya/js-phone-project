@@ -1,0 +1,40 @@
+i {
+    border-radius: 50%;
+}
+.header{
+    background-color: rgb(208, 206, 230);
+    background-color: black;
+
+}
+
+video{
+    height: 85vh;
+}
+
+.img-div{
+    height: 40vh;
+    width: 25vw;
+}
+
+.triple-pic{
+    height: 20vh;
+    width: 20vw;
+}
+
+#macbook_id{
+    height: 50vh;
+}
+
+.category{
+    /* margin-left: 100px; */
+    margin: auto;
+    justify-content: space-between;
+}
+.div-img{
+    width: 32.8%;
+}
+
+.footer-icons{
+    height: 25vh;
+    width: 25vw;
+}
