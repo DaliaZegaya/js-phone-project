@@ -4,6 +4,7 @@ async function getUserData() {
   gifDiv.innerHTML= '<img style= "width:7vw" src= /images/loading.gif> </img>'
   try {
     let arrayObj = await fetch(USER_API).then((res) => res.json());
+    console.log(arrayObj)
     arrayObj.forEach((element) => {
       document.querySelector(
         ".t_body"
@@ -16,12 +17,11 @@ async function getUserData() {
         <td >
         <img
         src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-        alt=""
         style="width: 50px; height: 50px"
         class="rounded-circle"
         />
         </td>
-        <td  > <button class="btn btn-dark";>DELETE</button></td>
+        <td  > <button onclick="deleteUser('${element.id}')" class="btn btn-dark";>DELETE</button></td>
         </tr>`;
     });
   } catch (err) {
@@ -31,3 +31,16 @@ async function getUserData() {
   }
 }
 getUserData();
+
+async function deleteUser(id){
+  try{
+    let response = await fetch(`${USER_API}/${id}`,{
+      method: 'DELETE',
+      headers: {'Content-type': 'application/json;'}
+    })
+
+    if(response.status >= 299) 
+      document.getElementById(id).remove()
+} catch(error){error}
+finally{}
+ }

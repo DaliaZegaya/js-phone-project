@@ -31,7 +31,7 @@ function printDeviceToScreen() {
       .then((result) => {
         result.forEach((item,index) => {
           mainDeviceDiv.innerHTML +=
-          `<div class="card col-4">
+          `<div class="card col-md-4 col-sm-12">
               <img src="/images/${imagesArray[index] ? imagesArray[index] : imagesArray[0]}" class="card-img-top"/>
               <div class="card-body card-page">
               <p>Brand:${item.brand}</p>
@@ -41,6 +41,8 @@ function printDeviceToScreen() {
                <p>Color:${item.color}</p>
                <p>Ram:${item.ram}</p>
                <button class="btn bg-warning">BUY NOW</button>
+               
+               <button class="btn bg-warning">WATCH REVIEW</button>
              </div>
           </div>`;
         });
@@ -51,5 +53,15 @@ function printDeviceToScreen() {
       });
   }
   printDeviceToScreen();
+
+  // function unboxVideo(){
+  //   let video= document.querySelector(".unbox_video")
+  //   video.classList.toggle("active")
+  //   unbox_video.innerHTML="<div class='unbox_video'>"+
+  //   "<video src='/images/videoplayback.mp4' controls='true'></video>"+
+  //   "<img onclick='unboxVideo()' src='/images/closepic.png' class='close'>"+
+  //   "</div>"
+  // }
+
 
 

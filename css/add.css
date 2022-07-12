@@ -1,3 +1,49 @@
 .header{
     background-color: black;
 }
+
+.splitscreen{
+    display:flex;
+}
+
+.join-form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 50%;
+    padding:7%;
+}
+
+.join-pic{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:60%;
+    padding:2%;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .splitscreen{
+        display:flex;
+        flex-direction:column!important;
+    }
+
+    .join-form{
+        align-items:center;
+        width: 100%;
+    }
+
+    .join-pic{
+        justify-content: center;
+        width:70%;
+
+    }
+    
+}
+
+.footer-icons{
+    font-size: 200%;
+}
+

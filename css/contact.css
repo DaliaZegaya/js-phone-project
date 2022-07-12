@@ -3,3 +3,54 @@
     background-color: black;
 
 }
+
+.splitscreen{
+    display:flex;
+}
+
+.splittext{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 50%;
+    padding:7%;
+}
+
+.splitvideo{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:60%;
+    padding:2%;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .splitscreen{
+        display:flex;
+        flex-direction:column!important;
+    }
+
+    .splittext{
+        align-items:center;
+        width: 100%;
+    }
+
+    .splitvideo{
+        justify-content: center;
+        width:100%;
+
+    }
+    
+}
+
+.mail{
+    border-radius: 20%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-icons{
+    font-size: 200%;
+}

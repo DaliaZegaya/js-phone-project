@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Send+Flowers&display=swap');
+
 i {
     border-radius: 50%;
 }
 .header{
     background-color: rgb(208, 206, 230);
     background-color: black;
+}
 
+.btn-home{
+    background-color: black;
 }
 
 video{
-    height: 85vh;
+    height: 90%;
+    width: 100%;
+}
+
+#top3 {
+    margin-top: 10%;
 }
 
 .img-div{
@@ -35,6 +45,56 @@ video{
 }
 
 .footer-icons{
-    height: 25vh;
-    width: 25vw;
+    font-size: 200%;
+}
+
+.splitscreen{
+    display:flex;
+}
+
+.splittext{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 50%;
+    padding:7%;
+}
+
+.splitvideo{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:60%;
+    padding:2%;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .splitscreen{
+        display:flex;
+        flex-direction:column!important;
+    }
+
+    .splittext{
+        align-items:center;
+        width: 100%;
+    }
+
+    .splitvideo{
+        justify-content: center;
+        width:100%;
+
+    }
+    
+}
+
+#bloggers{
+    height: 40%;
+    width: 100%;
+}
+
+.blog-img{
+    height: 80%;
+    width: 80%;
 }
