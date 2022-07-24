@@ -40,9 +40,12 @@ function printDeviceToScreen() {
                <p>Phone Date:${item.createdAt}</p>
                <p>Color:${item.color}</p>
                <p>Ram:${item.ram}</p>
+               <a href="https://www.ivory.co.il/catalog.php?id=43182" target="blank">
                <button class="btn bg-warning">BUY NOW</button>
-               
+               </a>
+               <a href="https://www.youtube.com/watch?v=DofO1kou9rA&ab_channel=Samsung" target="blank">
                <button class="btn bg-warning">WATCH REVIEW</button>
+               </a>
              </div>
           </div>`;
         });
